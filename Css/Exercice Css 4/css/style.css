@@ -1,0 +1,45 @@
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-image: url("../images/bg.jpg");
+}
+
+h1 {
+  color: green;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.galerie { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.galerie > img { 
+  width: 150px;
+  height: 150px;
+}
+
+
+img:hover {
+  transform: scale(1.2); 
+  z-index: 1; 
+  filter: brightness(1.5); 
+}
+
+
+img:not(:hover) {
+  filter: grayscale(100%) sepia(1); 
+}
+
+
+/*
+img:hover ~ img {
+  filter: grayscale(100%) sepia(1);
+}
+*/

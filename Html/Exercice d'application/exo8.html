@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les formulaires</title>
+    <style>
+        
+    
+    fieldset {
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+
+    legend {
+        display: block;
+        padding-left: 15px;
+    }
+
+    label {
+        text-align: left;
+        float: left;
+        clear: left;
+        width: 200px;
+        margin: 6px;
+        text-align: left;
+    }
+
+    input[type="text"] {
+        width: 260px;
+        margin: 10px 0px;
+    }
+
+    select {
+        width: 160px;
+        margin: 10px 2px;
+    }
+
+    </style>
+  </head>
+  <body>
+
+<div>
+    <form action="https://bienvenu.net/script.php" method="post">
+    <h1>Nous lançons une grande enquêtes sur les anciens stagiaires</h1>
+    <h3>merci de nous répondre</h3>
+
+    <fieldset>
+        <legend>Vos coordonnées</legend>
+            <label>votre nom</label> <input type="text"><br>
+            <label>votre prénom</label><input type="text"><br>
+            <label>votre date de naissance</label> <input type="text"><br>
+            <label>votre adresse</label> <input type="text"><br>
+            <label>votre ville</label> <input type="text"><br>
+            <label>votre code postal</label> <input type="text"><br>
+            <label>votre e-mail</label> <input type="text">
+    </fieldset>
+
+    <fieldset>
+        Vous êtes un homme<input type="radio" name="genre" value="homme">
+        Vous êtes une femme<input type="radio" name="genre" value="femme">
+    </fieldset>
+
+    <select name="metier"> 
+        <option value="développeur" selected>développeur</option> 
+        <option value="graphiste">graphiste</option> 
+        <option value="chomeur">chomeur</option>
+    </select><br>
+    
+
+    <select name="salaire"> 
+        <option value="&lt1000€" selected>&lt1000€</option> 
+        <option value="&gt500€">&gt500€</option> 
+        <option value="0">0</option><br>
+    </select><br>
+
+    <textarea name="commentaire" id="" cols="30" rows="5">vos commentaires</textarea>
+    <h2>merci d'avoir répondu au questionnaire</h2>
+
+
+    <input type="submit" value="validez">
+    <input type="submit" value="annulez">
+    </form>
+</div>
+
+
+
+  </body>
+</html>

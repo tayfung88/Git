@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les tableaux</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid #000000;
+      }
+    </style>
+  </head>
+
+  <!-- 
+    Créez le tableau dont le code se trouve ci-dessus dans un fichier HTML afin d’observer le résultat.
+    Utilisez le code HTML suivant (qui contient du style CSS pour afficher les bordures) pour démarrer votre fichier HTML :
+-->
+
+  <!-- 
+    Ajoutez la balise <caption> dans le fichier HTML créé précédemment.
+-->
+
+  <!-- 
+    Ajoutez la balise <tbody> à votre tableau.
+-->
+
+  <!-- 
+    <td colspan="4">Ventes du 1<sup>er</sup> trimestre</td>
+    Reprenez votre fichier HTML et ajoutez le code ci-dessus après votre balise <thead>. Observez ce qui se passe.
+-->
+
+  <!-- 
+    Reprenez votre fichier HTML, remplacez la ligne concernant Jacques par le code ci-des-sous et observez ce qui se passe :
+-->
+
+  <body>
+    <h1>Tableaux | HTML 5</h1>
+    <table>
+      <caption>
+        légende
+      </caption>
+      <thead>
+        <td colspan="4">Ventes du 1<sup>er</sup> trimestre</td>
+        <tr>
+          <th>-</th>
+          <th>Janvier</th>
+          <th>Février</th>
+          <th>Mars</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Pierre</td>
+        <td>65 800</td>
+        <td>53 200</td>
+        <td>46 400</td>
+      </tr>
+      <tr>
+        <td>Paul</td>
+        <td>88 000</td>
+        <td>51 500</td>
+        <td>62 300</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Jacques</td>
+        <td>74 400</td>
+        <td>64 200</td>
+        <td>78 900</td>
+      </tr>
+      <tr>
+        <td>68 100</td>
+        <td>76 700</td>
+        <td>99 500</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>228 200</td>
+          <td>168 900</td>
+          <td>187 600</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
